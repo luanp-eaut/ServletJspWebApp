@@ -22,7 +22,7 @@ public class LoginServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("Hashed Password: "+PasswordUtil.hashPassword("user123"));
+//		System.out.println("Hashed Password: "+PasswordUtil.hashPassword("user123"));
 		String servletPath = request.getServletPath();
 		if ("/login-error".equals(servletPath)) {
 			request.setAttribute("error", "Invalid username or password.");
